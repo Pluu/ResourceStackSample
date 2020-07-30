@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sectionTextView"
+            style="@style/SectionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section: TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/textViewFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv1,tv2,tv3"
+            app:flow_horizontalGap="4dp"
+            app:flow_horizontalStyle="spread"
+            app:flow_maxElementsWrap="2"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sectionTextView" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="텍스트" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="텍스트 (Color)"
+            android:textColor="#0336FF" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="텍스트 (Disable)" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/textViewFlow2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv4,tv5,tv6"
+            app:flow_horizontalGap="4dp"
+            app:flow_horizontalStyle="spread"
+            app:flow_maxElementsWrap="2"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFlow" />
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom Style" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom Style\n(Color)"
+            android:textColor="#0336FF" />
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Custom Style\n(Disable)" />
+
+        <TextView
+            android:id="@+id/sectionEditText"
+            style="@style/SectionStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Section: EditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFlow2" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/EditTextFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="edit1,edit2,edit3,edit4,edit5,edit6,edit7,edit8"
+            app:flow_horizontalGap="4dp"
+            app:flow_horizontalStyle="spread"
+            app:flow_maxElementsWrap="2"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sectionEditText" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_edit_text_hint"
+            android:text="텍스트" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_edit_text_hint"
+            android:text="텍스트 (Color)"
+            android:textColor="#0336FF" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/sample_edit_text_hint"
+            android:text="텍스트 (Disable)" />
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_edit_text_hint" />
+
+        <EditText
+            android:id="@+id/edit5"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_edit_text_hint"
+            android:text="Custom Style" />
+
+        <EditText
+            android:id="@+id/edit6"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/sample_edit_text_hint"
+            android:text="커스텀 Style (Color)"
+            android:textColor="#0336FF" />
+
+        <EditText
+            android:id="@+id/edit7"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/sample_edit_text_hint"
+            android:text="Custom Style (Disable)" />
+
+        <EditText
+            android:id="@+id/edit8"
+            style="@style/MyTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Custom Style Hint..." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

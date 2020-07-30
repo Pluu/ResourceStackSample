@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SectionStyle">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyTextStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">20sp</item>
+<!--        <item name="android:background">@drawable/bg_text_view</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyTextStyle.EditText">
+        <item name="android:textSize">50sp</item>
+        <item name="android:hint">Input...</item>
+    </style>
+
+    <style name="MyTextColorStyle">
+        <item name="android:textColor">@color/selector_custom_textview</item>
+    </style>
+
+</resources>
