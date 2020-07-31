@@ -331,6 +331,7 @@
             style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:hint="Custom Hint Color ..."
             android:textColorHint="#CCC" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

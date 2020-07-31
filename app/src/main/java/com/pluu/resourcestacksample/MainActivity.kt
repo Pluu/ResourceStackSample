@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             }
             add(::ScrollView) {
                 add(::LinearLayout) {
-                    orientation = android.widget.LinearLayout.VERTICAL
+                    orientation = LinearLayout.VERTICAL
                     setPadding(dp2Px(10f))
                     button(
                         text = "Default Theme",
