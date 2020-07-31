@@ -102,7 +102,7 @@
 
         <TextView
             android:id="@+id/previewTvCustom1"
-            style="@style/MyTextColorStyle.Preview"
+            style="@style/MyCustomTextColorStyle.Preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enable" />
@@ -113,7 +113,7 @@
 
         <TextView
             android:id="@+id/previewTvCustom2"
-            style="@style/MyTextColorStyle.Preview"
+            style="@style/MyCustomTextColorStyle.Preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:enabled="false"
@@ -124,7 +124,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:constraint_referenced_ids="tv4,tv5,tv6"
+            app:constraint_referenced_ids="tv4,tv6,tv5"
             app:flow_horizontalGap="4dp"
             app:flow_maxElementsWrap="2"
             app:flow_verticalGap="8dp"
@@ -135,26 +135,26 @@
 
         <TextView
             android:id="@+id/tv4"
-            style="@style/MyTextColorStyle"
+            style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Custom" />
 
         <TextView
-            android:id="@+id/tv5"
-            style="@style/MyTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom + Color"
-            android:textColor="#0336FF" />
-
-        <TextView
             android:id="@+id/tv6"
-            style="@style/MyTextColorStyle"
+            style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="Custom + Disable" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/MyCustomTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom + Color"
+            android:textColor="#0336FF" />
 
         <TextView
             android:id="@+id/sectionEditText"
@@ -214,7 +214,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            app:constraint_referenced_ids="edit1,edit2,edit3,edit4"
+            app:constraint_referenced_ids="edit1,edit3,edit4,edit2"
             app:flow_maxElementsWrap="1"
             app:flow_verticalGap="8dp"
             app:flow_wrapMode="aligned"
@@ -230,18 +230,18 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/edit2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="컬러 수정"
-            android:textColor="#0336FF" />
-
-        <EditText
             android:id="@+id/edit3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="Disable" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textColor="#0336FF" />
 
         <EditText
             android:id="@+id/edit4"
@@ -264,7 +264,7 @@
 
         <TextView
             android:id="@+id/previewCustomEdit1"
-            style="@style/MyTextColorStyle.Preview"
+            style="@style/MyCustomTextColorStyle.Preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enable" />
@@ -275,7 +275,7 @@
 
         <TextView
             android:id="@+id/previewCustomEdit2"
-            style="@style/MyTextColorStyle.Preview"
+            style="@style/MyCustomTextColorStyle.Preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:enabled="false"
@@ -287,7 +287,7 @@
 
         <TextView
             android:id="@+id/previewCustomEdit3"
-            style="@style/MyTextColorStyle.Preview"
+            style="@style/MyCustomTextColorStyle.Preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Hint" />
@@ -297,7 +297,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            app:constraint_referenced_ids="edit5,edit6,edit7,edit8"
+            app:constraint_referenced_ids="edit5,edit7,edit6,edit8"
             app:flow_maxElementsWrap="1"
             app:flow_verticalGap="8dp"
             app:flow_wrapMode="aligned"
@@ -307,33 +307,32 @@
 
         <EditText
             android:id="@+id/edit5"
-            style="@style/MyTextColorStyle"
+            style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Custom" />
 
         <EditText
-            android:id="@+id/edit6"
-            style="@style/MyTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom + Color"
-            android:textColor="#0336FF" />
-
-        <EditText
             android:id="@+id/edit7"
-            style="@style/MyTextColorStyle"
+            style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="Custom + Disable" />
 
         <EditText
-            android:id="@+id/edit8"
-            style="@style/MyTextColorStyle"
+            android:id="@+id/edit6"
+            style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Custom + Hint Color"
+            android:text="Custom + Color"
+            android:textColor="#0336FF" />
+
+        <EditText
+            android:id="@+id/edit8"
+            style="@style/MyCustomTextColorStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:textColorHint="#CCC" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
