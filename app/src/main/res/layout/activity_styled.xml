@@ -68,7 +68,7 @@
             android:id="@+id/tvEnable"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="기본" />
+            android:text="Default" />
 
         <TextView
             android:id="@+id/tvDisable"
@@ -224,7 +224,7 @@
             android:id="@+id/edit1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="기본"
+            android:text="Default"
             android:textSize="20sp" />
 
         <EditText
@@ -243,6 +243,7 @@
 
         <EditText
             android:id="@+id/edit4"
+            android:hint="Custom Hint Text"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
@@ -331,7 +332,7 @@
             style="@style/MyCustomTextColorStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Custom Hint Color ..."
+            android:hint="Custom Hint Color"
             android:textColorHint="#CCC" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
