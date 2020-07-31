@@ -2,7 +2,6 @@ package com.pluu.composer
 
 import android.app.Activity
 import android.content.Context
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +9,7 @@ import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.view.ViewManager
 import android.widget.Button
+import androidx.core.graphics.drawable.DrawableCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.textview.MaterialTextView
 
@@ -80,8 +80,8 @@ fun ViewManager.button(
         transformationMethod = null
         measureResult(this)
 
-//        DrawableCompat.setTint(DrawableCompat.wrap(background), bgColor)
-        backgroundTintList = ColorStateList.valueOf(bgColor)
+        DrawableCompat.setTint(DrawableCompat.wrap(background), bgColor)
+//        backgroundTintList = ColorStateList.valueOf(bgColor)
         setOnClickListener(listener)
     }
 }
