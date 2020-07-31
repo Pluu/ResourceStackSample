@@ -3,27 +3,62 @@
     <style name="SectionStyle">
         <item name="android:background">@null</item>
         <item name="android:minHeight">0dp</item>
-        <item name="android:padding">10dp</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
         <item name="android:textColor">@android:color/black</item>
-    </style>
-
-    <style name="MyTextStyle" parent="Widget.MaterialComponents.TextView">
         <item name="android:textSize">20sp</item>
-<!--        <item name="android:background">@drawable/bg_text_view</item>-->
-        <item name="android:gravity">center</item>
-        <item name="android:padding">10dp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MyTextStyle.EditText">
-        <item name="android:textSize">50sp</item>
-        <item name="android:hint">Input...</item>
+    <style name="PreviewDividerStyle">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@drawable/divider_preview_tag</item>
+        <item name="android:rotation">-70</item>
+    </style>
+
+    <style name="MyTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/bg_text_view</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyTextStyle.Preview">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="MyTextColorStyle">
         <item name="android:textColor">@color/selector_custom_textview</item>
+    </style>
+
+    <style name="MyTextColorStyle.Preview">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:hint">Please Input...</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">20sp</item>
+
+        <!-- theme의 editTextColor 보다 우선 순위가 높음-->
+<!--        <item name="android:textColor">#000</item>-->
+    </style>
+
+    <style name="MyEditTextStyle.Preview">
+        <item name="android:background">@null</item>
+        <item name="android:hint">@null</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

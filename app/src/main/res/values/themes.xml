@@ -13,12 +13,20 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
+        <!-- Custom Color -->
         <item name="android:textColor">@color/selector_default_textview</item>
         <item name="android:textColorHint">@color/text_hint</item>
-        <item name="android:editTextColor">@color/selector_default_textview</item>
 
+        <item name="android:editTextColor">@color/selector_default_edittext</item>
+        <item name="editTextColor">@color/selector_default_edittext</item>
+
+        <!-- Custom Style -->
         <item name="android:textViewStyle">@style/MyTextStyle</item>
-<!--        <item name="android:editTextStyle">@style/MyTextStyle.EditText</item>-->
+
+        <item name="android:editTextBackground">@drawable/bg_text_view</item>
+        <item name="editTextBackground">@drawable/bg_text_view</item>
+        <item name="editTextStyle">@style/MyEditTextStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTextStyle</item>
     </style>
 
     <style name="Theme.ResourceStackSample.NoActionBar">
