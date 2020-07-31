@@ -8,18 +8,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ResourceStackSample">
+        android:theme="@style/BaseTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.ResourceStackSample.NoActionBar"
-            android:windowSoftInputMode="adjustResize">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DefaultActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".StyledActivity"
+            android:theme="@style/BaseTheme.Styled"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
