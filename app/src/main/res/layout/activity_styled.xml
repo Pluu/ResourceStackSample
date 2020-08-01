@@ -54,7 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            app:constraint_referenced_ids="tvEnable,tvDisable,tvColor"
+            app:constraint_referenced_ids="tvEnable,tvDisable"
             app:flow_horizontalGap="4dp"
             app:flow_maxElementsWrap="2"
             app:flow_verticalGap="8dp"
@@ -77,82 +77,6 @@
             android:text="Disable" />
 
         <TextView
-            android:id="@+id/tvColor"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Color"
-            android:textColor="#0336FF" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/textViewCustomPreviewFlow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:constraint_referenced_ids="previewTvCustom1,previewTvCustomDivider,previewTvCustom2"
-            app:flow_horizontalBias="0"
-            app:flow_horizontalGap="4dp"
-            app:flow_horizontalStyle="packed"
-            app:flow_wrapMode="aligned"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewFlow" />
-
-        <TextView
-            android:id="@+id/previewTvCustom1"
-            style="@style/MyCustomTextColorStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enable" />
-
-        <View
-            android:id="@+id/previewTvCustomDivider"
-            style="@style/PreviewDividerStyle" />
-
-        <TextView
-            android:id="@+id/previewTvCustom2"
-            style="@style/MyCustomTextColorStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Disable" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/textViewFlow2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            app:constraint_referenced_ids="tv4,tv6,tv5"
-            app:flow_horizontalGap="4dp"
-            app:flow_maxElementsWrap="2"
-            app:flow_verticalGap="8dp"
-            app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewCustomPreviewFlow" />
-
-        <TextView
-            android:id="@+id/tv4"
-            style="@style/MyCustomTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom" />
-
-        <TextView
-            android:id="@+id/tv6"
-            style="@style/MyCustomTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Custom + Disable" />
-
-        <TextView
-            android:id="@+id/tv5"
-            style="@style/MyCustomTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom + Color"
-            android:textColor="#0336FF" />
-
-        <TextView
             android:id="@+id/sectionEditText"
             style="@style/SectionStyle"
             android:layout_width="0dp"
@@ -160,7 +84,7 @@
             android:layout_marginTop="24dp"
             android:text="EditText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewFlow2" />
+            app:layout_constraintTop_toBottomOf="@id/textViewFlow" />
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/editTextPreviewFlow"
@@ -209,7 +133,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            app:constraint_referenced_ids="edit1,edit3,edit4,edit2"
+            app:constraint_referenced_ids="edit1,edit2,edit3"
             app:flow_maxElementsWrap="1"
             app:flow_verticalGap="8dp"
             app:flow_wrapMode="aligned"
@@ -225,111 +149,17 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/edit3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Disable" />
-
-        <EditText
             android:id="@+id/edit2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Color"
-            android:textColor="#0336FF" />
-
-        <EditText
-            android:id="@+id/edit4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Custom Hint Text" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/editTextCustomPreviewFlow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:constraint_referenced_ids="previewCustomEdit1,previewCustomEditDivider1,previewCustomEdit2,previewCustomEditDivider2,previewCustomEdit3"
-            app:flow_horizontalBias="0"
-            app:flow_horizontalGap="4dp"
-            app:flow_horizontalStyle="packed"
-            app:flow_wrapMode="aligned"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextFlow" />
-
-        <TextView
-            android:id="@+id/previewCustomEdit1"
-            style="@style/MyCustomTextColorStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enable" />
-
-        <View
-            android:id="@+id/previewCustomEditDivider1"
-            style="@style/PreviewDividerStyle" />
-
-        <TextView
-            android:id="@+id/previewCustomEdit2"
-            style="@style/MyCustomTextColorStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:enabled="false"
             android:text="Disable" />
 
-        <View
-            android:id="@+id/previewCustomEditDivider2"
-            style="@style/PreviewDividerStyle" />
-
-        <TextView
-            android:id="@+id/previewCustomEdit3"
-            style="@style/MyCustomTextColorStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Hint" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/editTextFlow2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            app:constraint_referenced_ids="edit5,edit7,edit6,edit8"
-            app:flow_maxElementsWrap="1"
-            app:flow_verticalGap="8dp"
-            app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextCustomPreviewFlow" />
-
         <EditText
-            android:id="@+id/edit5"
-            style="@style/MyCustomTextColorStyle"
+            android:id="@+id/edit3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Custom" />
-
-        <EditText
-            android:id="@+id/edit7"
-            style="@style/MyCustomTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Custom + Disable" />
-
-        <EditText
-            android:id="@+id/edit6"
-            style="@style/MyCustomTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom + Color"
-            android:textColor="#0336FF" />
-
-        <EditText
-            android:id="@+id/edit8"
-            style="@style/MyCustomTextColorStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Custom Hint Color"
-            android:textColorHint="#CCC" />
+            android:hint="Custom Hint Text" />
 
         <TextView
             android:id="@+id/sectionButton"
@@ -339,7 +169,7 @@
             android:layout_marginTop="24dp"
             android:text="Button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextFlow2" />
+            app:layout_constraintTop_toBottomOf="@id/editTextFlow" />
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/buttonPreviewFlow"
@@ -398,83 +228,5 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="Disable" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Color"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="#D81B60" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/buttonCustomPreviewFlow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:constraint_referenced_ids="previewCustomButton1,previewCustomButtonDivider1,previewCustomButton2"
-            app:flow_horizontalBias="0"
-            app:flow_horizontalGap="4dp"
-            app:flow_horizontalStyle="packed"
-            app:flow_wrapMode="aligned"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonFlow" />
-
-        <Button
-            android:id="@+id/previewCustomButton1"
-            style="@style/MyCustomButtonStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enable" />
-
-        <View
-            android:id="@+id/previewCustomButtonDivider1"
-            style="@style/PreviewDividerStyle" />
-
-        <Button
-            android:id="@+id/previewCustomButton2"
-            style="@style/MyCustomButtonStyle.Preview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Disable" />
-
-        <androidx.constraintlayout.helper.widget.Flow
-            android:id="@+id/buttonCustomFlow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            app:constraint_referenced_ids="buttonCustom1,buttonCustom2,buttonCustom3"
-            app:flow_horizontalGap="8dp"
-            app:flow_maxElementsWrap="1"
-            app:flow_verticalGap="4dp"
-            app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/buttonCustomPreviewFlow" />
-
-        <Button
-            android:id="@+id/buttonCustom1"
-            style="@style/MyCustomButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom" />
-
-        <Button
-            android:id="@+id/buttonCustom2"
-            style="@style/MyCustomButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:enabled="false"
-            android:text="Custom + Disable" />
-
-        <Button
-            android:id="@+id/buttonCustom3"
-            style="@style/MyCustomButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom + Color/Hint"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="#D81B60" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
