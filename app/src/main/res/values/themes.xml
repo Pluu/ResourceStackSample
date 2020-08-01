@@ -16,7 +16,10 @@
     <style name="BaseTheme.Styled">
         <!-- TextView TextColor -->
         <!-- Support 4.4.2+ -->
+        <!-- TextVIew, Button, Toggle -->
         <item name="android:textColor">@color/selector_default_textview</item>
+
+        <!-- Hint Color -->
         <!-- Support 4.4.2+ -->
         <item name="android:textColorHint">@color/text_hint</item>
 
@@ -47,5 +50,12 @@
         <item name="android:buttonStyle">@style/MyButtonStyle</item>
         <!-- Support 4.4.2+ -->
         <item name="buttonStyle">@style/MyButtonStyle</item>
+
+        <!-- EditText, Button, Toggle -->
+<!--        <item name="android:textColorPrimary">@color/selector_default_textview</item>-->
+        <!-- CompoundButton (CheckBox, RadioButton, Switch) -->
+<!--        <item name="android:textColorPrimaryDisableOnly">@color/selector_default_textview</item>-->
+        <!-- TextView -->
+<!--        <item name="android:textColorTertiary">@color/selector_default_textview</item>-->
     </style>
 </resources>
