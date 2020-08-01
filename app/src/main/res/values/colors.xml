@@ -21,7 +21,7 @@
     <color name="edittext_disable">#8E24AA</color>
 
     <color name="button_default">@color/google_yellow</color>
-    <color name="button_default_bg">@color/google_blue</color>
+    <color name="button_default_bg">#0C3D88</color>
     <color name="button_disable">#5C1349</color>
     <color name="button_disable_bg">#C2C8CC</color>
 
