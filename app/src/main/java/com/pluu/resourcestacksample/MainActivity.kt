@@ -1,6 +1,7 @@
 package com.pluu.resourcestacksample
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
@@ -34,7 +35,9 @@ class MainActivity : AppCompatActivity() {
                     }
                     button(
                         text = "Styled Theme",
-                        measureResult = defaultButtonStyle
+                        measureResult = defaultButtonStyle,
+                        textColor = Color.WHITE,
+                        bgColor = 0xFF4285F4.toInt()
                     ) {
                         startActivity(Intent(this@MainActivity, StyledActivity::class.java))
                     }

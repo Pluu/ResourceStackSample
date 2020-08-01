@@ -71,6 +71,7 @@ fun ViewManager.text(text: String) {
 
 fun ViewManager.button(
     text: String,
+    textColor: Int = Color.BLACK,
     bgColor: Int = Color.LTGRAY,
     measureResult: Button.() -> Unit = {},
     listener: (View) -> Unit
@@ -79,6 +80,7 @@ fun ViewManager.button(
         this.text = text
         transformationMethod = null
         measureResult(this)
+        setTextColor(textColor)
 
         DrawableCompat.setTint(DrawableCompat.wrap(background), bgColor)
 //        backgroundTintList = ColorStateList.valueOf(bgColor)
