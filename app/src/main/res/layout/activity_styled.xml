@@ -20,14 +20,13 @@
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/textViewPreviewFlow"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="previewTv1,previewDivider,previewTv2"
             app:flow_horizontalBias="0"
             app:flow_horizontalGap="4dp"
             app:flow_horizontalStyle="packed"
             app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sectionTextView" />
 
@@ -86,7 +85,7 @@
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/textViewCustomPreviewFlow"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             app:constraint_referenced_ids="previewTvCustom1,previewTvCustomDivider,previewTvCustom2"
@@ -94,7 +93,6 @@
             app:flow_horizontalGap="4dp"
             app:flow_horizontalStyle="packed"
             app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewFlow" />
 
@@ -166,14 +164,13 @@
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/editTextPreviewFlow"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="previewEdit1,previewEditDivider1,previewEdit2,previewEditDivider2,previewEdit3"
             app:flow_horizontalBias="0"
             app:flow_horizontalGap="4dp"
             app:flow_horizontalStyle="packed"
             app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sectionEditText" />
 
@@ -243,13 +240,13 @@
 
         <EditText
             android:id="@+id/edit4"
-            android:hint="Custom Hint Text"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Custom Hint Text" />
 
         <androidx.constraintlayout.helper.widget.Flow
             android:id="@+id/editTextCustomPreviewFlow"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             app:constraint_referenced_ids="previewCustomEdit1,previewCustomEditDivider1,previewCustomEdit2,previewCustomEditDivider2,previewCustomEdit3"
@@ -257,7 +254,6 @@
             app:flow_horizontalGap="4dp"
             app:flow_horizontalStyle="packed"
             app:flow_wrapMode="aligned"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editTextFlow" />
 
@@ -334,5 +330,151 @@
             android:layout_height="wrap_content"
             android:hint="Custom Hint Color"
             android:textColorHint="#CCC" />
+
+        <TextView
+            android:id="@+id/sectionButton"
+            style="@style/SectionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextFlow2" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/buttonPreviewFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="previewButton1,previewButtonDivider1,previewButton2"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalGap="4dp"
+            app:flow_horizontalStyle="packed"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sectionButton" />
+
+        <Button
+            android:id="@+id/previewButton1"
+            style="@style/MyButtonStyle.Preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable" />
+
+        <View
+            android:id="@+id/previewButtonDivider1"
+            style="@style/PreviewDividerStyle" />
+
+        <Button
+            android:id="@+id/previewButton2"
+            style="@style/MyButtonStyle.Preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Disable" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/buttonFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:constraint_referenced_ids="button1,button2,button3"
+            app:flow_horizontalGap="8dp"
+            app:flow_maxElementsWrap="1"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonPreviewFlow" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Default" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Disable" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#D81B60" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/buttonCustomPreviewFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:constraint_referenced_ids="previewCustomButton1,previewCustomButtonDivider1,previewCustomButton2"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalGap="4dp"
+            app:flow_horizontalStyle="packed"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonFlow" />
+
+        <Button
+            android:id="@+id/previewCustomButton1"
+            style="@style/MyCustomButtonStyle.Preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable" />
+
+        <View
+            android:id="@+id/previewCustomButtonDivider1"
+            style="@style/PreviewDividerStyle" />
+
+        <Button
+            android:id="@+id/previewCustomButton2"
+            style="@style/MyCustomButtonStyle.Preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Disable" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/buttonCustomFlow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:constraint_referenced_ids="buttonCustom1,buttonCustom2,buttonCustom3"
+            app:flow_horizontalGap="8dp"
+            app:flow_maxElementsWrap="1"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonCustomPreviewFlow" />
+
+        <Button
+            android:id="@+id/buttonCustom1"
+            style="@style/MyCustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom" />
+
+        <Button
+            android:id="@+id/buttonCustom2"
+            style="@style/MyCustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Custom + Disable" />
+
+        <Button
+            android:id="@+id/buttonCustom3"
+            style="@style/MyCustomButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom + Color/Hint"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#D81B60" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

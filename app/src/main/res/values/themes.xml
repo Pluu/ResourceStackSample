@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -21,14 +21,22 @@
 
         <!-- EditText TextColor -->
         <item name="android:editTextColor">@color/selector_default_edittext</item>
-        <item name="editTextColor">@color/selector_default_edittext</item>
 
-        <!-- Custom Style -->
+        <!-- Support 4.4.2+ -->
         <item name="android:textViewStyle">@style/MyTextStyle</item>
 
-        <item name="android:editTextBackground">@drawable/bg_text_view</item>
-        <item name="editTextBackground">@drawable/bg_text_view</item>
-        <item name="editTextStyle">@style/MyEditTextStyle</item>
+        <!-- Support 5.0+ -->
+        <item name="android:editTextBackground">@drawable/bg_edit_text_view</item>
+        <!-- Support 4.4.2 -->
+        <item name="editTextBackground">@drawable/bg_edit_text_view</item>
+
+        <!-- Support 5.0+ -->
         <item name="android:editTextStyle">@style/MyEditTextStyle</item>
+        <!-- Support 4.4.2+ -->
+        <item name="editTextStyle">@style/MyEditTextStyle</item>
+        <!-- Support 5.0+ -->
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+        <!-- Support 4.4.2+ -->
+        <item name="buttonStyle">@style/MyButtonStyle</item>
     </style>
 </resources>
