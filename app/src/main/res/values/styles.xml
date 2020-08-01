@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="SectionStyle">
+    <style name="SectionStyle" parent="Widget.AppCompat.TextView">
         <item name="android:background">@null</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:paddingTop">8dp</item>
@@ -10,14 +10,14 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="PreviewDividerStyle">
+    <style name="PreviewDividerStyle" parent="Widget.AppCompat.TextView">
         <item name="android:layout_width">12dp</item>
         <item name="android:layout_height">24dp</item>
         <item name="android:background">@drawable/divider_preview_tag</item>
         <item name="android:rotation">-70</item>
     </style>
 
-    <style name="MyTextStyle">
+    <style name="MyTextStyle" parent="Widget.AppCompat.TextView">
         <item name="android:background">@drawable/bg_text_view</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">4dp</item>
@@ -36,7 +36,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MyCustomTextColorStyle">
+    <style name="MyCustomTextColorStyle" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/selector_custom_textview</item>
         <item name="android:textColorHint">#C51162</item>
     </style>

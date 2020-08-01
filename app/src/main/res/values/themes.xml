@@ -15,9 +15,11 @@
 
     <style name="BaseTheme.Styled">
         <!-- Custom Color -->
+        <!-- TextView TextColor -->
         <item name="android:textColor">@color/selector_default_textview</item>
         <item name="android:textColorHint">@color/text_hint</item>
 
+        <!-- EditText TextColor -->
         <item name="android:editTextColor">@color/selector_default_edittext</item>
         <item name="editTextColor">@color/selector_default_edittext</item>
 
