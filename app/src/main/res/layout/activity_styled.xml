@@ -145,8 +145,7 @@
             android:id="@+id/edit1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Default"
-            android:textSize="20sp" />
+            android:text="Default" />
 
         <EditText
             android:id="@+id/edit2"

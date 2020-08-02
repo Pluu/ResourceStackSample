@@ -40,7 +40,7 @@
         <item name="android:textViewStyle">@style/MyTextStyle</item>
 
         <!-- EditText Style -->
-        <!-- Support 5.0+ -->
+        <!-- Not Working -->
         <item name="android:editTextStyle">@style/MyEditTextStyle</item>
         <!-- Support 4.4.2+ -->
         <item name="editTextStyle">@style/MyEditTextStyle</item>
