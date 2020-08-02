@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -157,8 +158,7 @@
         <EditText
             android:id="@+id/edit3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Custom Hint Text" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/sectionButton"
@@ -206,7 +206,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            app:constraint_referenced_ids="button1,button2,button3"
+            app:constraint_referenced_ids="button1,button2"
             app:flow_horizontalGap="8dp"
             app:flow_maxElementsWrap="1"
             app:flow_verticalGap="4dp"
@@ -227,5 +227,102 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="Disable" />
+
+        <TextView
+            android:id="@+id/sectionOther"
+            style="@style/SectionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonFlow" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/otherFLow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            app:constraint_referenced_ids="checkBox,radioGroup,toggleButton,switch1,seekBar,progressBar,ratingBar"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalGap="8dp"
+            app:flow_maxElementsWrap="1"
+            app:flow_verticalGap="4dp"
+            app:flow_wrapMode="chain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sectionOther" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CheckBox"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="610dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:checkedButton="@id/radioButton">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ToggleButton" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Switch"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="735dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="40"
+            tools:progress="50" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="40"
+            tools:progress="30" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="6"
+            android:rating="4"
+            android:stepSize="1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

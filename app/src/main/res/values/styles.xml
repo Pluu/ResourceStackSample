@@ -64,8 +64,8 @@
     </style>
 
     <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/selector_default_button</item>
+        <item name="android:textSize">20sp</item>
         <item name="backgroundTint">@color/selector_default_button_bg</item>
     </style>
 

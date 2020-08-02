@@ -51,6 +51,9 @@
         <!-- Support 4.4.2+ -->
         <item name="buttonStyle">@style/MyButtonStyle</item>
 
+        <!-- Others Component Style -->
+        <!-- TextView -->
+<!--        <item name="android:textColorTertiary">@color/selector_default_textview</item>-->
         <!-- EditText, Button, Toggle -->
 <!--        <item name="android:textColorPrimary">@color/selector_default_textview</item>-->
         <!-- CompoundButton (CheckBox, RadioButton, Switch) -->
